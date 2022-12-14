@@ -53,16 +53,15 @@ zp = fp.fillna(0)
 # zp
 
 # df7 = px.data.df()
-fig7 = px.density_heatmap(df, x='호선', y="5시30분", marginal_x="rug", marginal_y="histogram")
-tab2.plotly_chart(fig7)
-
 palette_redwhite = ['#ffffff', '#ff0000']
 fig7 = px.density_heatmap(df, x = '호선', y = '5시30분', histfunc = 'count',
                          color_continuous_scale = palette_redwhite, range_color = [0, 30],
                          nbinsx = 30)
     
 fig7.update_xaxes(range = [0, 300])
-    
+fig7.show()
+fig7 = px.density_heatmap(df, x='호선', y="5시30분", marginal_x="rug", marginal_y="histogram")
+tab2.plotly_chart(fig7)
 fig7.show()
 
 fig8 = px.density_heatmap(df, x='호선', y="6시30분", marginal_x="rug", marginal_y="histogram")
