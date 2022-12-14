@@ -18,3 +18,5 @@ st.write(df2)
 fig = plt.figure(figsize=(10,4))
 sns.histplot(data=df, x='호선', hue='조사일자', multiple='stack')
 st.pyplot(fig)
+
+
