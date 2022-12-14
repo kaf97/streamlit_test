@@ -70,6 +70,6 @@ fig = px.density_heatmap(df, x = '호선', y = '5시30분', histfunc = 'count',
                          color_continuous_scale = palette_redwhite, range_color = [0, 30],
                          nbinsx = 30)
     
-fig.update_xaxes(range = [-100, 200])
+fig.update_xaxes(range = [0, 300])
     
 fig.show()
