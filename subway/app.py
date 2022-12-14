@@ -66,10 +66,10 @@ fig0 = px.density_heatmap(df, x='호선', y="8시30분", marginal_x="rug", margi
 tab5.plotly_chart(fig0)
 
 palette_redwhite = ['#ffffff', '#ff0000']
-fig = px.density_heatmap(df, x = '호선', y = '5시30분', histfunc = 'count',
+fig7 = px.density_heatmap(df, x = '호선', y = '5시30분', histfunc = 'count',
                          color_continuous_scale = palette_redwhite, range_color = [0, 30],
                          nbinsx = 30)
     
-fig.update_xaxes(range = [0, 300])
+fig7.update_xaxes(range = [0, 300])
     
-fig.show()
+fig7.show()
