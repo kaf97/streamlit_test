@@ -54,3 +54,5 @@ zp = fp.fillna(0)
 # df7 = px.data.df()
 fig7 = px.density_heatmap(df, x='호선', y="5시30분", marginal_x="rug", marginal_y="histogram")
 st.plotly_chart(fig7)
+
+sns.heatmap(data=fp, cmap='coolwarm')
