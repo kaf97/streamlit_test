@@ -46,10 +46,10 @@ fp = df.pivot_table(index='호선', columns='구분', values='5시30분', aggfun
 zp = fp.fillna(0)
 zp
 
+palette = sns.color_palette('BuGn')
+sns.palplot(palette)
 sns.heatmap(data=zp)
 
 # df7 = px.data.df()
 fig7 = px.density_heatmap(df, x='호선', y="5시30분", marginal_x="rug", marginal_y="histogram")
 st.plotly_chart(fig7)
-palette = sns.color_palette('BuGn')
-sns.palplot(palette)
