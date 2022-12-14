@@ -53,7 +53,11 @@ zp = fp.fillna(0)
 
 # df7 = px.data.df()
 fig7 = px.density_heatmap(df, x='호선', y="5시30분", marginal_x="rug", marginal_y="histogram")
-sns.heatmap(data=df, cmap='coolwarm')
+
+colors = ["#FF73B8", "#FFFF36"]
+sns.set_palette(sns.color_palette(colors))
+
+sns.catplot(data=df, x="호선", y="5시30분")
 st.plotly_chart(fig7)
 
 
