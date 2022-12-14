@@ -12,8 +12,8 @@ st.write(
 df = pd.read_csv('./subway/subway.csv', encoding='CP949')
 st.write(df)
 
-df = pd.read_csv('./subway/subway_part.csv', encoding='CP949')
-st.write(df)
+df2 = pd.read_csv('./subway/subway_part.csv')
+st.write(df2)
 
 fig = plt.figure(figsize=(10,4))
 sns.histplot(data=df, x='호선', hue='조사일자', multiple='stack')
