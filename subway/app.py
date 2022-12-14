@@ -56,4 +56,4 @@ fig7 = px.density_heatmap(df, x='호선', y="5시30분", marginal_x="rug", margi
 st.plotly_chart(fig7)
 
 
-px.df(df_0233,	x='호선', y='5시30분', color='amount',color_continuous_scale='Greens')
+px.df(df_0233,	x='호선', y='5시30분', color='count',color_continuous_scale='Greens')
